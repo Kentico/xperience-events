@@ -1,0 +1,10 @@
+﻿*
+!.gitignore
+!Xperience.Events.csproj
+!packages.Xperience.Events.config
+!Properties/Xperience.EventsAssemblyInfo.cs
+!Old_App_Code/CMSModules/Xperience.Events/*
+!Old_App_Code/CMSClasses/Pages/Xperience/*
+!App_Data/CMSModules/Xperience.Events/**/*
+!CMSResources/Xperience.Events/**
+!/README.md
