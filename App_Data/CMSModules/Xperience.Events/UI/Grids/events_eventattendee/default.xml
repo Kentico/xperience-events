@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action name="#delete" caption="$General.Delete$" fonticonclass="icon-bin" fonticonstyle="critical" confirmation="$General.ConfirmDelete$" />
+  </actions>
+  <massactions>
+    <massaction caption="$general.delete$" name="#delete" behavior="openmodal"></massaction>
+  </massactions>
+  <columns>
+    <column source="ContactID" externalsourcename="#transform: om.contact : {%ContactFirstName%} {%ContactLastName%} {%String.IsNullOrEmpty(ContactEmail) ? String.Empty : ContactEmail %}" caption="Contact" />
+    <column source="EventAttendeeRegisteredOn" caption="Registered on" />
+  </columns>
+  <options>
+    <key name="DisplayFilter" value="true" />
+  </options>
+</grid>
