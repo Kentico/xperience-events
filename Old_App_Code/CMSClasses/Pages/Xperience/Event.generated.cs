@@ -131,6 +131,23 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 		/// <summary>
+		/// All day event.
+		/// </summary>
+		[DatabaseField]
+		public bool EventIsAllDay
+		{
+			get
+			{
+				return ValidationHelper.GetBoolean(GetValue("EventIsAllDay"), true);
+			}
+			set
+			{
+				SetValue("EventIsAllDay", value);
+			}
+		}
+
+
+		/// <summary>
 		/// End time.
 		/// </summary>
 		[DatabaseField]
@@ -309,6 +326,22 @@ namespace CMS.DocumentEngine.Types.Xperience
 				set
 				{
 					mInstance.EventStart = value;
+				}
+			}
+
+
+			/// <summary>
+			/// All day event.
+			/// </summary>
+			public bool IsAllDay
+			{
+				get
+				{
+					return mInstance.EventIsAllDay;
+				}
+				set
+				{
+					mInstance.EventIsAllDay = value;
 				}
 			}
 
