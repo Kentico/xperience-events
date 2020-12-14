@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="App_Data\CMSModules\Xperience.Events\UI\Grids\events_eventattendee\default.xml" />
   </ItemGroup>
   <PropertyGroup>
