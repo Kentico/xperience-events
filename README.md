@@ -3,7 +3,7 @@
 ## Installation
 
 1. Install the [Xperience.Events](https://www.nuget.org/packages/Xperience.Events) NuGet package in the CMS application
-1. _(Optional)_ Install the [companion package](https://www.nuget.org/packages/Xperience.Core.Events) in your .NET Core application
+1. _(Optional)_ Install the [companion package](https://github.com/kentico-ericd/xperience-core-events) in your .NET Core application
 1. Build the CMS application
 1. In the __Page types__ application, configure the [scopes](https://docs.xperience.io/developing-websites/defining-website-content-structure/managing-page-types/limiting-the-pages-users-can-create#Limitingthepagesuserscancreate-Managingpagetypescopes) and [allowed types](https://docs.xperience.io/developing-websites/defining-website-content-structure/managing-page-types/limiting-the-pages-users-can-create#Limitingthepagesuserscancreate-Allowinguserstoplacecertainpagesunderapagetype) for the new `Xperience.Event` and `Xperience.EventCalendar` page types
 
