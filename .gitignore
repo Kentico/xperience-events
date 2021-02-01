@@ -3,7 +3,6 @@
 !Xperience.Events.csproj
 !packages.Xperience.Events.config
 !Properties/Xperience.EventsAssemblyInfo.cs
-!CMSSiteUtils/Export/Xperience.Events.*
 !Old_App_Code/CMSModules/Xperience.Events/*
 !Old_App_Code/CMSClasses/Pages/Xperience/*
 !App_Data/CMSModules/Xperience.Events/**/*

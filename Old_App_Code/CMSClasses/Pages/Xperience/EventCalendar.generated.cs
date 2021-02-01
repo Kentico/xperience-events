@@ -80,14 +80,14 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 		/// <summary>
-		/// Color.
+		/// Text color.
 		/// </summary>
 		[DatabaseField]
 		public string EventCalendarColor
 		{
 			get
 			{
-				return ValidationHelper.GetString(GetValue("EventCalendarColor"), @"");
+				return ValidationHelper.GetString(GetValue("EventCalendarColor"), @"#000");
 			}
 			set
 			{
@@ -114,7 +114,7 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 		/// <summary>
-		/// Border color.
+		/// Bullet color.
 		/// </summary>
 		[DatabaseField]
 		public string EventCalendarBorderColor
@@ -126,6 +126,40 @@ namespace CMS.DocumentEngine.Types.Xperience
 			set
 			{
 				SetValue("EventCalendarBorderColor", value);
+			}
+		}
+
+
+		/// <summary>
+		/// Show event capacity and attendee count.
+		/// </summary>
+		[DatabaseField]
+		public bool EventCalendarShowAttendeeCount
+		{
+			get
+			{
+				return ValidationHelper.GetBoolean(GetValue("EventCalendarShowAttendeeCount"), true);
+			}
+			set
+			{
+				SetValue("EventCalendarShowAttendeeCount", value);
+			}
+		}
+
+
+		/// <summary>
+		/// Show event attendee names.
+		/// </summary>
+		[DatabaseField]
+		public bool EventCalendarShowAttendeeNames
+		{
+			get
+			{
+				return ValidationHelper.GetBoolean(GetValue("EventCalendarShowAttendeeNames"), false);
+			}
+			set
+			{
+				SetValue("EventCalendarShowAttendeeNames", value);
 			}
 		}
 
@@ -198,7 +232,7 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 			/// <summary>
-			/// Color.
+			/// Text color.
 			/// </summary>
 			public string Color
 			{
@@ -230,7 +264,7 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 			/// <summary>
-			/// Border color.
+			/// Bullet color.
 			/// </summary>
 			public string BorderColor
 			{
@@ -241,6 +275,38 @@ namespace CMS.DocumentEngine.Types.Xperience
 				set
 				{
 					mInstance.EventCalendarBorderColor = value;
+				}
+			}
+
+
+			/// <summary>
+			/// Show event capacity and attendee count.
+			/// </summary>
+			public bool ShowAttendeeCount
+			{
+				get
+				{
+					return mInstance.EventCalendarShowAttendeeCount;
+				}
+				set
+				{
+					mInstance.EventCalendarShowAttendeeCount = value;
+				}
+			}
+
+
+			/// <summary>
+			/// Show event attendee names.
+			/// </summary>
+			public bool ShowAttendeeNames
+			{
+				get
+				{
+					return mInstance.EventCalendarShowAttendeeNames;
+				}
+				set
+				{
+					mInstance.EventCalendarShowAttendeeNames = value;
 				}
 			}
 		}

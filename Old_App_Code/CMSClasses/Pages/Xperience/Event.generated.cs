@@ -114,6 +114,23 @@ namespace CMS.DocumentEngine.Types.Xperience
 
 
 		/// <summary>
+		/// Location.
+		/// </summary>
+		[DatabaseField]
+		public string EventLocation
+		{
+			get
+			{
+				return ValidationHelper.GetString(GetValue("EventLocation"), @"");
+			}
+			set
+			{
+				SetValue("EventLocation", value);
+			}
+		}
+
+
+		/// <summary>
 		/// Start time.
 		/// </summary>
 		[DatabaseField]
@@ -310,6 +327,22 @@ namespace CMS.DocumentEngine.Types.Xperience
 				set
 				{
 					mInstance.EventDescription = value;
+				}
+			}
+
+
+			/// <summary>
+			/// Location.
+			/// </summary>
+			public string Location
+			{
+				get
+				{
+					return mInstance.EventLocation;
+				}
+				set
+				{
+					mInstance.EventLocation = value;
 				}
 			}
 
