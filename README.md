@@ -26,3 +26,12 @@ To add events to a calendar, create `Xperience.Event` pages under the `Xperience
 If _Requires registration_ is enabled, you can set an event capacity and  also allow further registration if the capacity is exceeded. You can view and manage current registrations from the new __Attendees__ tab:
 
 ![Attendee tab](/img/attendeetab.png)
+
+## Displaying events on the live site
+
+If you installed the __Xperience.Core.Events__ package on your .NET Core site, you can [use the widget](https://github.com/kentico-ericd/xperience-core-events#displaying-event-calendars) to display calendars. Otherwise, you can use standard Xperience API to load calendars and their events: [Displaying page content](https://docs.xperience.io/developing-websites/retrieving-content/displaying-page-content).
+
+```cs
+var events = pageRetriever.Retrieve<Event>(query => query
+        .Path("/Calendars/Office", PathTypeEnum.Children));
+```
