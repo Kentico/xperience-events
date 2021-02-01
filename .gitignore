@@ -1,5 +1,6 @@
 ﻿*
 !.gitignore
+!img/*
 !Xperience.Events.csproj
 !packages.Xperience.Events.config
 !Properties/Xperience.EventsAssemblyInfo.cs
