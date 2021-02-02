@@ -1,4 +1,4 @@
-![Kentico.Xperience.Libraries 13.0.5](https://img.shields.io/badge/Kentico.Xperience.Libraries-v13.0.5-orange)
+[![Nuget](https://img.shields.io/nuget/v/Xperience.Events)](https://www.nuget.org/packages/Xperience.Events) ![Kentico.Xperience.Libraries 13.0.5](https://img.shields.io/badge/Kentico.Xperience.Libraries-v13.0.5-orange)
 
 # Xperience Events
 
