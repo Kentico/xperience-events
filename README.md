@@ -1,3 +1,5 @@
+![Kentico.Xperience.Libraries 13.0.5](https://img.shields.io/badge/Kentico.Xperience.Libraries-v13.0.5-orange)
+
 # Xperience Events
 
 ## Installation
