@@ -37,3 +37,15 @@ If you installed the __Xperience.Core.Events__ package on your .NET Core site, y
 var events = pageRetriever.Retrieve<Event>(query => query
         .Path("/Calendars/Office", PathTypeEnum.Children));
 ```
+
+## Compatibility
+
+This code is only available for use on Kentico Xperience 13 websites. The CMS application must be hotfixed to _at least_ the version indicated at the top of the README.
+
+## Feedback & Contributing
+
+Check out the [contributing](https://github.com/kentico-ericd/xperience-core-events/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions, and begin contributing.
+
+## License
+
+The repository is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
