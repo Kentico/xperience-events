@@ -9,3 +9,4 @@
 !App_Data/CMSModules/Xperience.Events/**/*
 !CMSResources/Xperience.Events/**
 !/README.md
+!.github/**/*
